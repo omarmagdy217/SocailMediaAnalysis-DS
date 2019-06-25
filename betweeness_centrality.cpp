@@ -122,6 +122,7 @@ for (int i=0;i<g.numVertices;i++)
             
             
             size= num_paths[temp]/ float(num_paths[i]);
+            size=size/2;
             cnt[temp]=cnt[temp]+size;
             //if (parent_index[temp]!=src)
             s.emplace(temp);
@@ -135,6 +136,7 @@ for (int i=0;i<g.numVertices;i++)
                 if (temp!=src)
                 {
                     size= num_paths[temp]/ float(num_paths[i]);
+                    size=size/2;
                     cnt[temp]=cnt[temp]+size;
                     //if (parent_index[temp]!=src)
                     s.emplace(temp);

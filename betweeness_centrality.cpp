@@ -88,7 +88,7 @@ for (int i=0;i<g.numVertices;i++)
       if (dis[index]+g.edges[index][i] == dis[i])
       {
           equal[i].push_back(index);
-          num_paths[i]++;
+          num_paths[i]=num_paths[i]+num_paths[index];
       } 
       if (dis[index]+g.edges[index][i] < dis[i])  
         {

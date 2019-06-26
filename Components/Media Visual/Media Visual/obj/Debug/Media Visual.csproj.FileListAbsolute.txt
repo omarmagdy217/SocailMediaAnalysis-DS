@@ -1,0 +1,9 @@
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\bin\Debug\Media Visual.exe.config
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\bin\Debug\Media Visual.exe
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\bin\Debug\Media Visual.pdb
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\obj\Debug\Media Visual.csprojResolveAssemblyReference.cache
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\obj\Debug\Media_Visual.Form1.resources
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\obj\Debug\Media_Visual.Properties.Resources.resources
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\obj\Debug\Media Visual.csproj.GenerateResource.Cache
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\obj\Debug\Media Visual.exe
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\obj\Debug\Media Visual.pdb

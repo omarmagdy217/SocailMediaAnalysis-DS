@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Media Analysis", "Media Analysis\Media Analysis.vcxproj", "{69E04221-15EB-4762-A22F-08FE2CD6B952}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69E04221-15EB-4762-A22F-08FE2CD6B952}.Debug|Win32.ActiveCfg = Debug|Win32
+		{69E04221-15EB-4762-A22F-08FE2CD6B952}.Debug|Win32.Build.0 = Debug|Win32
+		{69E04221-15EB-4762-A22F-08FE2CD6B952}.Release|Win32.ActiveCfg = Release|Win32
+		{69E04221-15EB-4762-A22F-08FE2CD6B952}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

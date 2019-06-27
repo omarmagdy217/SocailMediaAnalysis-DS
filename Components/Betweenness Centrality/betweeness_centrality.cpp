@@ -156,51 +156,26 @@ void centrality(GraphType<VertexType> g, vector <float> &cnt)
     {
         SSSP(g,i,cnt);
     }
+    for (int i=0;i<g.numVertices;i++)
+    {
+        cout<<cnt[i]<<'\n';
+    }
 }
 int main()
-{vector<char> span;
-pair<short,bool> temp;
-temp={5,5};
-vector <float>cnt(10);
-GraphType<int> g(5);
-    g.AddVertex('0');
-    g.AddVertex('1');
-    g.AddVertex('2');
-    g.AddVertex('3');
-    g.AddVertex('4');
-    g.AddEdge('0','1',1);
-    g.AddEdge('0','2',1);
-    g.AddEdge('2','3',1);
-    g.AddEdge('2','4',3);
-    g.AddEdge('3','4',1);
-    g.AddEdge('1','3',1);
-   /* GraphType<int> g(10);
-    g.AddVertex('1');
-    g.AddVertex('2');
-    g.AddVertex('3');
-    g.AddVertex('4');
-    g.AddVertex('5');
-    g.AddVertex('6');
-    g.AddVertex('7');
-    g.AddVertex('8');
-    g.AddEdge('1','2',9);
-    g.AddEdge('1','6',14);
-    g.AddEdge('1','7',15);
-    g.AddEdge('2','3',24);
-    g.AddEdge('6','3',18);
-    g.AddEdge('6','5',30);
-    g.AddEdge('6','7',5);
-    g.AddEdge('7','5',20);
-    g.AddEdge('7','8',44);
-    g.AddEdge('3','8',19);
-    g.AddEdge('4','3',6);
-    g.AddEdge('4','8',11);
-    g.AddEdge('5','4',11);
-    g.AddEdge('5','8',16);
-    g.AddEdge('3','5',2);*/
- //min_spanning(g,span);
- //SSSP( g, 1,cnt);
+{
+int n, m,a,b,c;
+cin>>n>>m; 
+vector <float>cnt(n);
+GraphType<int> g(n);
+for (int i=0; i<n ;i++)
+{
+g.AddVertex(i);
+}
+for (int i=0; i<m ;i++)
+{
+cin>>a>>b>>c;
+g.AddEdge(a,b,c);
+}
  centrality(g,cnt);
- cout<<"done";
  return 0;
 }

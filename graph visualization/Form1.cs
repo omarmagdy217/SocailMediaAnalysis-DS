@@ -20,7 +20,8 @@ namespace WindowsFormsApp4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String[] words = new String[30];
+           // List<string> ls = new List<string>();
+            String[] words = new String[320];
             OpenFileDialog odf = new OpenFileDialog();
             if (odf.ShowDialog() == DialogResult.OK)
             {
@@ -33,9 +34,10 @@ namespace WindowsFormsApp4
             Microsoft.Msagl.GraphViewerGdi.GViewer viewer = new Microsoft.Msagl.GraphViewerGdi.GViewer();
             //create a graph object 
             Microsoft.Msagl.Drawing.Graph graph = new Microsoft.Msagl.Drawing.Graph("graph");
-            int cnt = 0;
+            int cnt = 2;
+            int m = Int32.Parse(words[1]);
             //create the graph content 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < m ; i++)
             {
                 Microsoft.Msagl.Drawing.Edge x = graph.AddEdge(words[cnt], words[cnt + 2], words[cnt + 1]);
                 x.Attr.ArrowheadAtTarget = Microsoft.Msagl.Drawing.ArrowStyle.None;

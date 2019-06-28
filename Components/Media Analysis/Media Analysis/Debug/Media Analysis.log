@@ -1,13 +1,63 @@
-﻿Build started 26/06/2019 07:49:32 PM.
+﻿Build started 28/06/2019 03:00:07 PM.
      1>Project "D:\My Files\Projects\Data Structures\Social Media Analysis\Media Analysis\Media Analysis\Media Analysis.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
-         Source.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Betweenness.cpp
+         Betweenness.cpp
+     1>d:\my files\projects\data structures\social media analysis\media analysis\media analysis\betweenness.cpp(74): warning C4553: '==' : operator has no effect; did you intend '='?
+                 d:\my files\projects\data structures\social media analysis\media analysis\media analysis\betweenness.cpp(70) : while compiling class template member function 'void GraphType<VertexType>::AddVertex(VertexType)'
+                 with
+                 [
+                     VertexType=short
+                 ]
+                 d:\my files\projects\data structures\social media analysis\media analysis\media analysis\betweenness.cpp(199) : see reference to function template instantiation 'void GraphType<VertexType>::AddVertex(VertexType)' being compiled
+                 with
+                 [
+                     VertexType=short
+                 ]
+                 d:\my files\projects\data structures\social media analysis\media analysis\media analysis\betweenness.cpp(196) : see reference to class template instantiation 'GraphType<VertexType>' being compiled
+                 with
+                 [
+                     VertexType=short
+                 ]
+     1>d:\my files\projects\data structures\social media analysis\media analysis\media analysis\betweenness.cpp(75): warning C4553: '==' : operator has no effect; did you intend '='?
+     1>d:\my files\projects\data structures\social media analysis\media analysis\media analysis\betweenness.cpp(61): warning C4018: '<' : signed/unsigned mismatch
+                 d:\my files\projects\data structures\social media analysis\media analysis\media analysis\betweenness.cpp(83) : see reference to function template instantiation 'int indexIs<VertexType>(std::vector<_Ty>,VertexType)' being compiled
+                 with
+                 [
+                     VertexType=short,
+                     _Ty=short
+                 ]
+                 d:\my files\projects\data structures\social media analysis\media analysis\media analysis\betweenness.cpp(80) : while compiling class template member function 'void GraphType<VertexType>::AddEdge(VertexType,VertexType,int)'
+                 with
+                 [
+                     VertexType=short
+                 ]
+                 d:\my files\projects\data structures\social media analysis\media analysis\media analysis\betweenness.cpp(204) : see reference to function template instantiation 'void GraphType<VertexType>::AddEdge(VertexType,VertexType,int)' being compiled
+                 with
+                 [
+                     VertexType=short
+                 ]
+     1>d:\my files\projects\data structures\social media analysis\media analysis\media analysis\betweenness.cpp(159): warning C4018: '<' : signed/unsigned mismatch
+                 d:\my files\projects\data structures\social media analysis\media analysis\media analysis\betweenness.cpp(182) : see reference to function template instantiation 'void SSSP<short>(GraphType<VertexType>,int,std::vector<_Ty> &)' being compiled
+                 with
+                 [
+                     VertexType=short,
+                     _Ty=double
+                 ]
+                 d:\my files\projects\data structures\social media analysis\media analysis\media analysis\betweenness.cpp(206) : see reference to function template instantiation 'void centrality<short>(GraphType<VertexType>,std::vector<_Ty> &)' being compiled
+                 with
+                 [
+                     VertexType=short,
+                     _Ty=double
+                 ]
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\My Files\Projects\Data Structures\Social Media Analysis\Media Analysis\Debug\Media Analysis.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\My Files\Projects\Data Structures\Social Media Analysis\Media Analysis\Debug\Media Analysis.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\My Files\Projects\Data Structures\Social Media Analysis\Media Analysis\Debug\Media Analysis.lib" /MACHINE:X86 Debug\Source.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\My Files\Projects\Data Structures\Social Media Analysis\Media Analysis\Debug\Media Analysis.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\My Files\Projects\Data Structures\Social Media Analysis\Media Analysis\Debug\Media Analysis.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\My Files\Projects\Data Structures\Social Media Analysis\Media Analysis\Debug\Media Analysis.lib" /MACHINE:X86 Debug\Betweenness.obj
+         Debug\Closeness.obj
+         Debug\Degree.obj
+         Debug\Source.obj
          Media Analysis.vcxproj -> D:\My Files\Projects\Data Structures\Social Media Analysis\Media Analysis\Debug\Media Analysis.exe
      1>Done Building Project "D:\My Files\Projects\Data Structures\Social Media Analysis\Media Analysis\Media Analysis\Media Analysis.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.51
+Time Elapsed 00:00:04.21

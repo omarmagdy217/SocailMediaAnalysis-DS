@@ -7,3 +7,10 @@ D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Vi
 D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\obj\Debug\Media Visual.csproj.GenerateResource.Cache
 D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\obj\Debug\Media Visual.exe
 D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\obj\Debug\Media Visual.pdb
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\bin\Debug\Microsoft.Msagl.dll
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\bin\Debug\Microsoft.Msagl.Drawing.dll
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\bin\Debug\Microsoft.Msagl.GraphViewerGdi.dll
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\bin\Debug\Microsoft.Msagl.xml
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\bin\Debug\Microsoft.Msagl.Drawing.xml
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\bin\Debug\Microsoft.Msagl.GraphViewerGdi.xml
+D:\My Files\Projects\Data Structures\Social Media Analysis\Media Visual\Media Visual\obj\Debug\Media_Visual.Form2.resources

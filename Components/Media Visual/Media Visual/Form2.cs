@@ -48,27 +48,35 @@ namespace Media_Visual
                 sr.Close();
             }
             mylist.Sort((x, y) => (y.Value.CompareTo(x.Value)));
-            float diff = 60 / n;
-            float rad = 100;
+            byte green=70;
+            int div = n;
             for (int i = 0; i < n; i++)
             {
                 line = mylist[i].Key;
                 Microsoft.Msagl.Drawing.Node l = graph.AddNode(line);
-
-                l.Attr.Shape = Microsoft.Msagl.Drawing.Shape.Box;
-                l.Attr.XRadius = rad;
-                l.Attr.YRadius = rad;
-                if (i < n / 4)
-                    l.Attr.FillColor = Microsoft.Msagl.Drawing.Color.DarkGreen;
+                l.Attr.Shape = Microsoft.Msagl.Drawing.Shape.Circle;
+                l.Attr.FillColor = new Microsoft.Msagl.Drawing.Color(0, green, 0);
+                /*if (i < n / 4)
+                    l.Attr.FillColor = Microsoft.Msagl.Drawing.Color.FromArgb(0x479DEE);
                 else if (i < 2 * n / 4)
                     l.Attr.FillColor = Microsoft.Msagl.Drawing.Color.SeaGreen;
                 else if (i < 3 * n / 4)
                     l.Attr.FillColor = Microsoft.Msagl.Drawing.Color.PaleGreen;
                 else
-                    l.Attr.FillColor = Microsoft.Msagl.Drawing.Color.MistyRose;
-                rad = rad - diff;
-            }
-            //create the graph content 
+                    l.Attr.FillColor = Microsoft.Msagl.Drawing.Color.MistyRose;*/
+
+                if (i < 1)
+                {
+                    green = (byte)(green + (180 / div));
+                    
+                }
+                else if (mylist[i].Value < mylist[i - 1].Value)
+                {
+                    div--;
+                    green = (byte)(green + (180 / div));
+                    
+                }
+            }//create the graph content 
             for (int i = 0; i < m; i++)
             {
                 Microsoft.Msagl.Drawing.Edge x = graph.AddEdge(words[cnt], words[cnt + 2], words[cnt + 1]);

@@ -66,9 +66,11 @@ namespace Media_Visual
                 l.Attr.Shape = Microsoft.Msagl.Drawing.Shape.Box;
                 l.Attr.XRadius = rad;
                 l.Attr.YRadius = rad;
-                if (i < n / 3)
-                    l.Attr.FillColor = Microsoft.Msagl.Drawing.Color.Green;
-                else if (i < 2 * n / 3)
+               if (i < n / 4)
+                    l.Attr.FillColor = Microsoft.Msagl.Drawing.Color.DarkGreen;
+                else if (i < 2 * n / 4)
+                    l.Attr.FillColor = Microsoft.Msagl.Drawing.Color.SeaGreen;
+                else if (i < 3 * n / 4)
                     l.Attr.FillColor = Microsoft.Msagl.Drawing.Color.PaleGreen;
                 else
                     l.Attr.FillColor = Microsoft.Msagl.Drawing.Color.MistyRose;

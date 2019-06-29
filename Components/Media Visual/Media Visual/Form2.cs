@@ -52,6 +52,13 @@ namespace Media_Visual
             int div = n;
             for (int i = 0; i < n; i++)
             {
+                if (i > 0)
+                    if (mylist[i].Value < mylist[i - 1].Value)
+                    {
+                        div--;
+                        green = (byte)(green + (180 / div));
+
+                    }
                 line = mylist[i].Key;
                 Microsoft.Msagl.Drawing.Node l = graph.AddNode(line);
                 l.Attr.Shape = Microsoft.Msagl.Drawing.Shape.Circle;
@@ -65,18 +72,9 @@ namespace Media_Visual
                 else
                     l.Attr.FillColor = Microsoft.Msagl.Drawing.Color.MistyRose;*/
 
-                if (i < 1)
-                {
-                    green = (byte)(green + (180 / div));
-                    
-                }
-                else if (mylist[i].Value < mylist[i - 1].Value)
-                {
-                    div--;
-                    green = (byte)(green + (180 / div));
-                    
-                }
-            }//create the graph content 
+               
+            }
+            //create the graph content 
             for (int i = 0; i < m; i++)
             {
                 Microsoft.Msagl.Drawing.Edge x = graph.AddEdge(words[cnt], words[cnt + 2], words[cnt + 1]);
@@ -90,8 +88,6 @@ namespace Media_Visual
             viewer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Controls.Add(viewer);
             this.ResumeLayout();
-            //show the form 
-            this.Visible = false;
         }
     }
 }

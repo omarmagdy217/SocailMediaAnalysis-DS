@@ -1,2 +1,2 @@
-Closeness
+Betweenness
 D:/My Files/Projects/Data Structures/Social Media Analysis/undirected_unweighted_graph.txt

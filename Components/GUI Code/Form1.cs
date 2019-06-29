@@ -14,7 +14,6 @@ namespace Media_Visual
 {
     public partial class Form1 : Form
     {
-        Form2 frm2 = new Form2();
         public static string FilePath = String.Empty, line;
         public Form1()
         {
@@ -69,7 +68,10 @@ namespace Media_Visual
             button2.Enabled = false;*/
             var answer = MessageBox.Show("Run Visualization?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (answer == DialogResult.Yes)
+            {
+                Form2 frm2 = new Form2();
                 frm2.ShowDialog();
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)

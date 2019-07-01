@@ -18,7 +18,7 @@ int minDistance(int dist[], bool sptSet[] )
 
    return min_index;
 }
-
+ //function that calculates the sum of min distance from certin node 
 
  int calc(int dist[],int n){
 	 int x=0;
@@ -77,16 +77,15 @@ void Closeness_Centrality()
 	cin>>m;
 	int* x = new int [V];
 	vector<vector<int>>graph(V,vector<int>(V,0));
-	for(int j=0;j<m;j++){
+	for(int j=0;j<m;j++){ //reading input
 		int a,b,c;
 		cin>>a>>b>>c;
 		graph[a][b]=c;
 		graph[b][a]=c;
 	}
 	double* centrality = new double [V];
-	//input example
 	for(int i=0;i<V;i++){
-		x[i]= closness_dijkstra(graph, i);
+		x[i]= closness_dijkstra(graph, i); //sum of min distances
 		centrality[i]=(double)(V-1)/(double)x[i];
 		cout << fixed;
 		cout.precision(8);

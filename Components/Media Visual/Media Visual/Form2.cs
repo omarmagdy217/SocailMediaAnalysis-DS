@@ -53,12 +53,12 @@ namespace Media_Visual
             for (int i = 0; i < n; i++)
             {
                 if (i > 0)
+                { 
                     if (mylist[i].Value < mylist[i - 1].Value)
-                    {
-                        div--;
                         green = (byte)(green + (180 / div));
-
-                    }
+                    else 
+                        div--;
+                }
                 line = mylist[i].Key;
                 Microsoft.Msagl.Drawing.Node l = graph.AddNode(line);
                 l.Attr.Shape = Microsoft.Msagl.Drawing.Shape.Circle;
@@ -71,8 +71,6 @@ namespace Media_Visual
                     l.Attr.FillColor = Microsoft.Msagl.Drawing.Color.PaleGreen;
                 else
                     l.Attr.FillColor = Microsoft.Msagl.Drawing.Color.MistyRose;*/
-
-               
             }
             //create the graph content 
             for (int i = 0; i < m; i++)
